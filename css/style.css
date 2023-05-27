@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+html{
+    --branco: #e8e8e8;
+    --roxo: #B766E1;
+    --cinza: #3E3E3E;
+    --cinzaClaro: #848282;
+    --roxoButton: #A763F7;
+}
+
+#container {
+    background: linear-gradient(to bottom, #A763F7, #B766E1);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-box{
+    background-color: var(--branco);
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: fit-content;
+    position: relative;
+    box-shadow: 2px 5px 3px var(--roxoButton);
+    max-height: 90%;
+}
+
+h2{
+    font-size: 2em;
+    padding: 0.4em;
+    margin: 0.1em;
+}
+
+.ToDoList{
+    height: 2.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1em;
+    border-bottom: 1px solid var(--cinzaClaro);
+}
+
+.ToDoList:hover{
+    background-color: #e3e3e3;
+}
+aside {
+    display: flex;
+    gap: 0.5em;
+}
+
+span{
+    font-family: 'Roboto', sans-serif;
+}
+
+menu{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+i{
+    color: var(--cinza);
+    transition: ease-in-out 0.5s;
+}
+
+button{
+    background-color: var(--roxoButton);
+    border: 0;
+    border-radius: 20px;
+    width: 3em;
+    height: 3em;
+    transition: 0.5s ease-in-out;
+
+}
+
+button i {
+    color: var(--branco);
+}
+
+button:hover {
+    background-color: var(--roxo);
+    box-shadow: 0px 0px 10px var(--roxoButton);
+
+}
+
+menu i:hover{
+    color: var(--roxo);
+}
+
+.delete{
+    display: none;
+}

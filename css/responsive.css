@@ -1,0 +1,12 @@
+@media(max-width: 900px){
+    #main-box{
+        width: 50%;
+    }
+}
+
+
+@media(max-width: 400px){
+    #main-box{
+        width: 90%;
+    }
+}
